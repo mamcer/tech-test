@@ -38,18 +38,18 @@ func TwoItemsMap(items []int, value int) bool {
 	sort.Ints(items)
 	var here map[int]int = make(map[int]int)
 
+	// where 0 is 'i need you' and 1 is 'i am here if you need me'
 	for i := 0; i < len(items); i++ {
 		if items[i] > value {
 			break
 		}
-		me := items[i]
 
+		me := items[i]
 		if v, ok := here[me]; ok {
 			if v == 0 {
 				return true
 			}
 		}
-
 		here[me] = 1
 
 		want := value - me
@@ -58,7 +58,6 @@ func TwoItemsMap(items []int, value int) bool {
 				return true
 			}
 		}
-
 		here[want] = 0
 	}
 
