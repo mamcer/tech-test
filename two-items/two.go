@@ -35,13 +35,13 @@ func TwoItemsSort(items []int, value int) bool {
 }
 
 func TwoItemsMap(items []int, value int) bool {
-	// sort.Ints(items)
+	sort.Ints(items)
 	var here map[int]int = make(map[int]int)
 
 	for i := 0; i < len(items); i++ {
-		// if items[i] > value {
-		// 	break
-		// }
+		if items[i] > value {
+			break
+		}
 		me := items[i]
 
 		if v, ok := here[me]; ok {

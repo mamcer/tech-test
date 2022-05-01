@@ -12,13 +12,13 @@ var validateEquivalence = func(t *testing.T, got, want bool) {
 func TestTwoItemsNested(t *testing.T) {
 
 	t.Run("two items success", func(t *testing.T) {
-		got := TwoItemsNested([]int{1, 2, 4, 6, 10, 12, 13, 64}, 18)
+		got := TwoItemsNested([]int{6, 1, 12, 64, 4, 2, 13, 10}, 18)
 
 		validateEquivalence(t, got, true)
 	})
 
 	t.Run("two items fail", func(t *testing.T) {
-		got := TwoItemsNested([]int{1, 2, 4, 6, 10, 12, 13, 64}, 100)
+		got := TwoItemsNested([]int{6, 1, 12, 64, 4, 2, 13, 10}, 100)
 		validateEquivalence(t, got, false)
 	})
 
@@ -37,7 +37,7 @@ func TestTwoItemsSort(t *testing.T) {
 	})
 
 	t.Run("two items fail", func(t *testing.T) {
-		got := TwoItemsSort([]int{1, 2, 4, 6, 10, 12, 13, 64}, 100)
+		got := TwoItemsSort([]int{6, 1, 12, 64, 4, 2, 13, 10}, 100)
 		validateEquivalence(t, got, false)
 	})
 
@@ -56,7 +56,8 @@ func TestTwoItemsMap(t *testing.T) {
 	})
 
 	t.Run("two items fail", func(t *testing.T) {
-		got := TwoItemsMap([]int{1, 2, 4, 6, 10, 12, 13, 64}, 100)
+
+		got := TwoItemsMap([]int{6, 1, 12, 64, 4, 2, 13, 10}, 100)
 		validateEquivalence(t, got, false)
 	})
 
