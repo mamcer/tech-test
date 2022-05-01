@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var w string = ""
-	fmt.Printf("enter a word to see if it is palindrome: ")
+	fmt.Printf("enter a word to see if it's a palindrome: ")
 	fmt.Scanln(&w)
 	if palindrome.IsPalindromeFor(w) {
 		fmt.Printf("%q is palindrome\n", w)
