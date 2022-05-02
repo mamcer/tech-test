@@ -11,7 +11,7 @@ validate if two items of an array sum a specific value
 ## string times
 
 retrieve how many times a specific character is in a string
-
+ 
 ## Anagrama
 
 validate if a string is a permutation of another
