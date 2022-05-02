@@ -9,21 +9,21 @@ var validateEquivalence = func(t *testing.T, got, want int) {
 	}
 }
 
-func TestStringTimes(t *testing.T) {
+func TestStringTimesFor(t *testing.T) {
 	t.Run("string exists", func(t *testing.T) {
-		got := StringTimes("alabanza", "a")
+		got := StringTimesFor("alabanza", "a")
 
 		validateEquivalence(t, got, 4)
 	})
 
 	t.Run("string does not exists", func(t *testing.T) {
-		got := StringTimes("alabanza", "c")
+		got := StringTimesFor("alabanza", "c")
 
 		validateEquivalence(t, got, 0)
 	})
 
 	t.Run("empty string should return zero", func(t *testing.T) {
-		got := StringTimes("", "a")
+		got := StringTimesFor("", "a")
 
 		validateEquivalence(t, got, 0)
 	})
