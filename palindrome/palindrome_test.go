@@ -8,7 +8,7 @@ const notPalindromeExample = "mario"
 var validateEquivalence = func(t *testing.T, got, want bool) {
 	t.Helper()
 	if got != want {
-		t.Errorf("Got:%v, expect:%v", got, want)
+		t.Errorf("got:%v, want:%v", got, want)
 	}
 }
 
