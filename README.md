@@ -8,7 +8,7 @@ validate if a given word is a palindrome
 
 validate if two items of an array sum a specific value
 
-## string times
+## String times
 
 retrieve how many times a specific character is in a string
  

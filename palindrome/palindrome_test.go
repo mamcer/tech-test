@@ -22,6 +22,11 @@ func TestIsPalindromeFor(t *testing.T) {
 		got := IsPalindromeFor(notPalindromeExample)
 		validateEquivalence(t, got, false)
 	})
+
+	t.Run("empty is false", func(t *testing.T) {
+		got := IsPalindromeFor("")
+		validateEquivalence(t, got, false)
+	})
 }
 
 func TestIsPalindromeSort(t *testing.T) {
@@ -32,6 +37,11 @@ func TestIsPalindromeSort(t *testing.T) {
 
 	t.Run("is not palindrome", func(t *testing.T) {
 		got := IsPalindromeSort(notPalindromeExample)
+		validateEquivalence(t, got, false)
+	})
+
+	t.Run("empty is false", func(t *testing.T) {
+		got := IsPalindromeFor("")
 		validateEquivalence(t, got, false)
 	})
 }
