@@ -29,6 +29,23 @@ func TestIsPalindromeFor(t *testing.T) {
 	})
 }
 
+func TestIsPalindromeForHalf(t *testing.T) {
+	t.Run("is palindrome", func(t *testing.T) {
+		got := IsPalindromeForHalf(palindromeExample)
+		validateEquivalence(t, got, true)
+	})
+
+	t.Run("is not palindrome", func(t *testing.T) {
+		got := IsPalindromeForHalf(notPalindromeExample)
+		validateEquivalence(t, got, false)
+	})
+
+	t.Run("empty is false", func(t *testing.T) {
+		got := IsPalindromeForHalf("")
+		validateEquivalence(t, got, false)
+	})
+}
+
 func TestIsPalindromeSort(t *testing.T) {
 	t.Run("is palindrome", func(t *testing.T) {
 		got := IsPalindromeSort(palindromeExample)
