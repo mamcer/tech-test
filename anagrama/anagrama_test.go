@@ -9,8 +9,30 @@ var validateEquivalence = func(t *testing.T, got, want bool) {
 	}
 }
 
-func TestIsAnagrama(t *testing.T) {
-	got := IsAnagrama("mario", "oiram")
+func TestIsAnagramaSort(t *testing.T) {
 
-	validateEquivalence(t, got, true)
+	t.Run("is palindrome", func(t *testing.T) {
+		got := IsAnagramaSort("mario", "omira")
+		validateEquivalence(t, got, true)
+	})
+
+	t.Run("is not palindrome", func(t *testing.T) {
+		got := IsAnagramaSort("mario", "orama")
+		validateEquivalence(t, got, false)
+	})
+
+	t.Run("empty is false", func(t *testing.T) {
+		got := IsAnagramaSort("mario", "")
+		validateEquivalence(t, got, false)
+	})
+
+	t.Run("empty is false", func(t *testing.T) {
+		got := IsAnagramaSort("", "mario")
+		validateEquivalence(t, got, false)
+	})
+
+	t.Run("is palindrome", func(t *testing.T) {
+		got := IsAnagramaSort("acuerdo japones", "ecuador esponja")
+		validateEquivalence(t, got, true)
+	})
 }
