@@ -46,7 +46,7 @@ func TestExtractSegment(t *testing.T) {
 			t.Errorf("got:%v, want:%v\n", got1, "aaaaa")
 		}
 		if got2 != 5 {
-			t.Errorf("got:%v, want:%v\n", got1, 5)
+			t.Errorf("got:%v, want:%v\n", got2, 5)
 		}
 
 		got1, got2 = ExtractSameChar("aaaaabbbcc", 5)
@@ -54,7 +54,7 @@ func TestExtractSegment(t *testing.T) {
 			t.Errorf("got:%v, want:%v\n", got1, "bbb")
 		}
 		if got2 != 8 {
-			t.Errorf("got:%v, want:%v\n", got1, 5)
+			t.Errorf("got:%v, want:%v\n", got2, 8)
 		}
 
 		got1, got2 = ExtractSameChar("aaaaabbbcc", 8)
