@@ -1,8 +1,6 @@
-package main
+package mergearrays
 
-import "fmt"
-
-func mergeArrays(a []int, b []int) []int {
+func MergeArrays(a []int, b []int) []int {
 	var k int = 0
 	var r []int
 	var i = 0
@@ -28,11 +26,4 @@ func mergeArrays(a []int, b []int) []int {
 		}
 	}
 	return r
-}
-
-func main() {
-	var a = []int{1, 4, 7, 9}
-	var b = []int{2, 3, 8, 11, 12}
-	var c = mergeArrays(a, b)
-	fmt.Printf("result: %v\n", c)
 }
