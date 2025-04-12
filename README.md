@@ -1,22 +1,22 @@
-# Tech Test
+# tech test
 
-## Palindrome
+## palindrome
 
-validate if a given word is a palindrome
+validate if a given word is a palindrome or not
 
-## Two items 
+## two items 
 
-validate if two items of an array sum a specific value
+validate whether there are two elements in an array whose sum result is a given specific value
 
-## String times
+## string times
 
 retrieve how many times a specific character is in a string
  
-## Anagrama
+## anagrama
 
 validate if a string is a permutation of another
 
-## Compactor/Decompactor
+## compactor/decompactor
 
 compact and optionally decompact a string
 
@@ -24,7 +24,7 @@ string = "aaaaabbbadddcc"
 
 compactador(string) = "a5b2a1d3c2"
 
-## Maximum difference
+## maximum difference
 
 the difference between the elements of a matrix is defined by a[j] - a[i] where i < j and a[i] < a[j]
 complete la funcion maximumDifference which has and integer array as an input and returns the maximum difference
@@ -39,12 +39,12 @@ differences:
 
 maximum difference = 7
 
-## Merge ordenado
+## merge ordenado
 
 In merge ordenado arrays are created and merged to create a new sorted array containing the values from both arrays
 
 example: a=[1, 2, 3] b=[2, 5, 5] then c=[1, 2, 2, 3, 5, 5]
 
-## Merge arrays
+## merge arrays
 
-Receives two sorted arrays and produce a new array with all the elements from the two arrays sorted in ascending order
+receives two sorted arrays and produce a new array with all the elements from the two arrays sorted in ascending order
