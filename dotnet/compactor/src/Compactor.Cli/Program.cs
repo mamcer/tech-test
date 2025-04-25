@@ -18,7 +18,7 @@ public class Program
         }
 
         var current = input[0];
-        var result = string.Empty;
+        var result = new System.Text.StringBuilder();
         var count = 1;
         for (int i = 1; i < input.Length; i++)
         {
@@ -29,12 +29,12 @@ public class Program
             }
             else
             {
-                result += current + count.ToString();
+                result.Append(current).Append(count);
                 current = input[i];
                 count = 1;
             }
         }
-        result += current + count.ToString();
-        return result;
+        result.Append(current).Append(count);
+        return result.ToString();
     }
 }
