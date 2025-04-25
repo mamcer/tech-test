@@ -1,5 +1,7 @@
 # tech test
 
+Examples about how to solve the following challenges using golang and netcore.
+
 ## palindrome
 
 validate if a given word is a palindrome or not
