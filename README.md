@@ -22,7 +22,7 @@ compact and optionally decompact a string
 
 string = "aaaaabbbadddcc"
 
-compactador(string) = "a5b2a1d3c2"
+compactador(string) = "a5b3a1d3c2"
 
 ## maximum difference
 
