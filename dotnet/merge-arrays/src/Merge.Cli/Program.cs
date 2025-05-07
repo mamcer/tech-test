@@ -14,7 +14,7 @@ public class Program
     {
         if (array01 == null || array02 == null)
         {
-            throw new ArgumentNullException("Input arrays cannot be null.");
+            throw new ArgumentNullException(array01 == null ? nameof(array01) : nameof(array02), "Input array cannot be null.");
         }
 
         int[] mergedArray = new int[array01.Length + array02.Length];
