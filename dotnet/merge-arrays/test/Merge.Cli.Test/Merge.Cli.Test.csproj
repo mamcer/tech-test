@@ -18,4 +18,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Merge.Cli\Merge.Cli.csproj" />
+  </ItemGroup>
+
 </Project>
