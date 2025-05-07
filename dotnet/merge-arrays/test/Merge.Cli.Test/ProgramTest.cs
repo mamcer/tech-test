@@ -106,7 +106,7 @@ public class ProgramTest
     public void MergeArrays_ThrowsArgumentNullException_WhenFirstArrayIsNull()
     {
         // Arrange
-        int[] array01 = null;
+        int[] array01 = null!;
         int[] array02 = { 1, 2, 3 };
 
         // Act & Assert
@@ -118,7 +118,7 @@ public class ProgramTest
     {
         // Arrange
         int[] array01 = { 1, 2, 3 };
-        int[] array02 = null;
+        int[] array02 = null!;
 
         // Act & Assert
         Assert.Throws<ArgumentNullException>(() => Program.MergeArrays(array01, array02));
