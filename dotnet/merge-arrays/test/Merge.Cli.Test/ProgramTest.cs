@@ -101,4 +101,26 @@ public class ProgramTest
         // Assert
         Assert.Equal(new[] { 1, 2, 3, 4, 6, 8 }, result);
     }
+
+        [Fact]
+    public void MergeArrays_ThrowsArgumentNullException_WhenFirstArrayIsNull()
+    {
+        // Arrange
+        int[] array01 = null;
+        int[] array02 = { 1, 2, 3 };
+
+        // Act & Assert
+        Assert.Throws<ArgumentNullException>(() => Program.MergeArrays(array01, array02));
+    }
+
+    [Fact]
+    public void MergeArrays_ThrowsArgumentNullException_WhenSecondArrayIsNull()
+    {
+        // Arrange
+        int[] array01 = { 1, 2, 3 };
+        int[] array02 = null;
+
+        // Act & Assert
+        Assert.Throws<ArgumentNullException>(() => Program.MergeArrays(array01, array02));
+    }
 }
