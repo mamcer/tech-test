@@ -6,8 +6,10 @@ public class Program
     {
         var array01 = new[] { 1, 3, 5, 7, 9 };
         var array02 = new[] { 2, 4, 6, 8, 10 };
+
         var mergedArray = MergeArrays(array01, array02);
-        Console.WriteLine("Merged Array: " + string.Join(", ", mergedArray));
+
+        Console.WriteLine("merged array: " + string.Join(", ", mergedArray));
     }
 
     public static int[] MergeArrays(int[] array01, int[] array02)
