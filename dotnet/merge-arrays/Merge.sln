@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merge.Cli", "src\Merge.Cli\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{330DAE44-8DCB-41A9-8E7C-E9760FF3BB6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merged.Cli.Test", "test\Merged.Cli.Test\Merged.Cli.Test.csproj", "{E94A3B6F-7DEF-4F09-8678-AC31FD759FB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merged.Cli.Test", "test\Merge.Cli.Test\Merge.Cli.Test.csproj", "{E94A3B6F-7DEF-4F09-8678-AC31FD759FB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

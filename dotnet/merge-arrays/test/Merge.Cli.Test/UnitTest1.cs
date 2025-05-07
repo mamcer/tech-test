@@ -1,4 +1,4 @@
-﻿namespace Merged.Cli.Test;
+﻿namespace Merge.Cli.Test;
 
 public class UnitTest1
 {
