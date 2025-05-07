@@ -1,8 +1,8 @@
 ﻿namespace Merge.Cli;
 
-internal class Program
+public class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
         var array01 = new[] { 1, 3, 5, 7, 9 };
         var array02 = new[] { 2, 4, 6, 8, 10 };
@@ -10,7 +10,7 @@ internal class Program
         Console.WriteLine("Merged Array: " + string.Join(", ", mergedArray));
     }
 
-    private static int[] MergeArrays(int[] array01, int[] array02)
+    public static int[] MergeArrays(int[] array01, int[] array02)
     {
         int[] mergedArray = new int[array01.Length + array02.Length];
         int i = 0, j = 0, k = 0;
