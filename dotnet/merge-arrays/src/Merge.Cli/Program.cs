@@ -12,6 +12,11 @@ public class Program
 
     public static int[] MergeArrays(int[] array01, int[] array02)
     {
+        if (array01 == null || array02 == null)
+        {
+            throw new ArgumentNullException("Input arrays cannot be null.");
+        }
+
         int[] mergedArray = new int[array01.Length + array02.Length];
         int i = 0, j = 0, k = 0;
 
