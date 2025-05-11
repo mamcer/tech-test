@@ -1,6 +1,6 @@
-namespace Compactor.Cli.Test;
+namespace Palindrome.Cli.Test;
 
-using Compactor.Cli;
+using Palindrome.Cli;
 
 public class ProgramTest
 {
