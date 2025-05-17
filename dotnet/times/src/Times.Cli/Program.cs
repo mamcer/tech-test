@@ -1,4 +1,6 @@
-﻿namespace Times.Cli;
+﻿using System;
+
+namespace Times.Cli;
 
 public class Program
 {
@@ -8,18 +10,12 @@ public class Program
         string word = "aabbccddaaeeffgg";
         Console.WriteLine($"{value} is appearing {Times(value, word)} times in the word '{word}'");
     }
-    
+
     public static int Times(char value, string word)
     {
-        int count = 0;
-        foreach (char c in word)
-        {
-            if (c == value)
-            {
-                count++;
-            }
-        }
- 
-        return count;
+        if (word == null)
+            throw new ArgumentNullException(nameof(word), "Input word cannot be null.");
+
+        return word.Count(c => c == value);
     }
 }
