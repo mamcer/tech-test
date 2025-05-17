@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A858BCD6-2EC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Times.Cli", "src\Times.Cli\Times.Cli.csproj", "{E20FC9C6-DA97-4B5D-86F5-20F29826486D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E123F7F0-444E-4404-AA05-285DF3F9855A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Times.Cli.Test", "test\Times.Cli.Test\Times.Cli.Test.csproj", "{A56C5877-7E2C-4BC3-ACBF-47C982B08989}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{E20FC9C6-DA97-4B5D-86F5-20F29826486D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E20FC9C6-DA97-4B5D-86F5-20F29826486D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E20FC9C6-DA97-4B5D-86F5-20F29826486D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56C5877-7E2C-4BC3-ACBF-47C982B08989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56C5877-7E2C-4BC3-ACBF-47C982B08989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56C5877-7E2C-4BC3-ACBF-47C982B08989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56C5877-7E2C-4BC3-ACBF-47C982B08989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E20FC9C6-DA97-4B5D-86F5-20F29826486D} = {A858BCD6-2EC0-4745-9CED-B5E8FA216DD4}
+		{A56C5877-7E2C-4BC3-ACBF-47C982B08989} = {E123F7F0-444E-4404-AA05-285DF3F9855A}
 	EndGlobalSection
 EndGlobal
