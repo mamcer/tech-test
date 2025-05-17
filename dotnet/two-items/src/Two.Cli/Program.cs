@@ -14,6 +14,11 @@ public class Program
         var seen = new HashSet<int>();
         foreach (var num in numbers)
         {
+            if (num > target)
+            {
+                continue;
+            }
+            
             int complement = target - num;
             if (seen.Contains(complement))
             {
