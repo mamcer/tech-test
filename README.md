@@ -1,6 +1,6 @@
 # tech test
 
-Examples about how to solve the following challenges using golang and netcore.
+Examples about how to solve the following challenges using golang and netcore (8).
 
 ## palindrome
 
