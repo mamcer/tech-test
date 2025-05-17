@@ -49,10 +49,10 @@ public class TimesTest
     {
         // Arrange
         char value = 'a';
-        string word = null;
+        string word = null!;
 
         // Act & Assert
-        Assert.Throws<ArgumentNullException>(() => Times.Cli.Program.Times(value, word));
+        Assert.Throws<ArgumentNullException>(() => Times.Cli.Program.Times(value, word!));
     }
 
     [Fact]
