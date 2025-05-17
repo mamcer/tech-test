@@ -18,7 +18,6 @@ public class Program
             if (seen.Contains(complement))
             {
                 return true;
-
             }
 
             seen.Add(num);
