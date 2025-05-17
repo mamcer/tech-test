@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DBB38D56-5B9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two.Cli", "src\Two.Cli\Two.Cli.csproj", "{7D77DC4C-FDA0-41E1-B45C-358CD9B8AD3B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{84A5096C-990A-41A9-84F4-07EE373BD99F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two.Cli.Test", "test\Two.Cli.Test\Two.Cli.Test.csproj", "{6B1022A2-21AA-467B-95ED-2994A6853306}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{7D77DC4C-FDA0-41E1-B45C-358CD9B8AD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D77DC4C-FDA0-41E1-B45C-358CD9B8AD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D77DC4C-FDA0-41E1-B45C-358CD9B8AD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1022A2-21AA-467B-95ED-2994A6853306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1022A2-21AA-467B-95ED-2994A6853306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1022A2-21AA-467B-95ED-2994A6853306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1022A2-21AA-467B-95ED-2994A6853306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7D77DC4C-FDA0-41E1-B45C-358CD9B8AD3B} = {DBB38D56-5B9A-44B9-8AB2-135789D5A1F4}
+		{6B1022A2-21AA-467B-95ED-2994A6853306} = {84A5096C-990A-41A9-84F4-07EE373BD99F}
 	EndGlobalSection
 EndGlobal
