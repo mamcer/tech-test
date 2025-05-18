@@ -1,6 +1,6 @@
-package mergeordenado;
+package mergeordenado
 
-func MergeOrdenado(int[] array1, array2) int[] {
+func MergeOrdenado(array1 []int, array2 []int) []int {
 	var k int = 0
 	var r []int
 	var i = 0
@@ -25,6 +25,6 @@ func MergeOrdenado(int[] array1, array2) int[] {
 			j++
 		}
 	}
-	
+
 	return r
 }
