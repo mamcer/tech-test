@@ -4,12 +4,12 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var array01 = new int[] { 1, 3, 5, 7, 9 };
-        var array02 = new int[] { 2, 3, 6, 8, 10 };
+        var array1 = new int[] { 1, 3, 5, 7, 9 };
+        var array2 = new int[] { 2, 3, 6, 8, 10 };
 
-        Console.WriteLine("array 01: " + string.Join(", ", array01));
-        Console.WriteLine("array 02: " + string.Join(", ", array02));
-        Console.WriteLine($"merge ordenado result: {string.Join(", ", MergeOrdenado(array01, array02))}");
+        Console.WriteLine("array 1: " + string.Join(", ", array1));
+        Console.WriteLine("array 2: " + string.Join(", ", array2));
+        Console.WriteLine($"merge ordenado result: {string.Join(", ", MergeOrdenado(array1, array2))}");
     }
 
     /// <summary>
@@ -51,7 +51,7 @@ public class Program
         {
             result[k++] = array2[j++];
         }
-        
+
         return result;
     }
 }
