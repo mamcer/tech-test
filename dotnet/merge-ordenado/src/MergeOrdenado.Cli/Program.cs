@@ -12,31 +12,46 @@ public class Program
         Console.WriteLine($"merge ordenado result: {string.Join(", ", MergeOrdenado(array01, array02))}");
     }
 
-/// <summary>
-/// Merges two sorted integer arrays into a single sorted array.
-/// </summary>
-public static int[] MergeOrdenado(int[] array1, int[] array2)
-{
-    if (array1 == null) throw new ArgumentNullException(nameof(array1));
-    if (array2 == null) throw new ArgumentNullException(nameof(array2));
-
-    int[] result = new int[array1.Length + array2.Length];
-    int i = 0, j = 0, k = 0;
-
-    while (i < array1.Length && j < array2.Length)
+    /// <summary>
+    /// Merges two sorted integer arrays into a single sorted array.
+    /// </summary>
+    public static int[] MergeOrdenado(int[] array1, int[] array2)
     {
-        if (array1[i] < array2[j])
+        if (array1 == null)
+        {
+            throw new ArgumentNullException(nameof(array1));
+        }
+
+        if (array2 == null)
+        {
+            throw new ArgumentNullException(nameof(array2));
+        }
+
+        int[] result = new int[array1.Length + array2.Length];
+        int i = 0, j = 0, k = 0;
+
+        while (i < array1.Length && j < array2.Length)
+        {
+            if (array1[i] < array2[j])
+            {
+                result[k++] = array1[i++];
+            }
+            else
+            {
+                result[k++] = array2[j++];
+            }
+        }
+
+        while (i < array1.Length)
+        {
             result[k++] = array1[i++];
-        else
+        }
+
+        while (j < array2.Length)
+        {
             result[k++] = array2[j++];
+        }
+        
+        return result;
     }
-
-    while (i < array1.Length)
-        result[k++] = array1[i++];
-
-    while (j < array2.Length)
-        result[k++] = array2[j++];
-
-    return result;
-}
 }
