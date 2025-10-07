@@ -36,10 +36,11 @@ example: `[15, 3, 6, 10]`
 
 differences: 
 
+```
 6 - 3 = 3
 10 - 3 = 7
 10 - 6 = 4
-
+```
 maximum difference = 7
 
 ## merge ordenado
