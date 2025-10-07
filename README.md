@@ -41,7 +41,7 @@ differences:
 10 - 3 = 7
 10 - 6 = 4
 ```
-maximum difference = 7
+maximum difference = `7`
 
 ## merge ordenado
 
