@@ -47,7 +47,7 @@ maximum difference = 7
 
 In merge ordenado arrays are created and merged to create a new sorted array containing the values from both arrays
 
-example: a=[1, 2, 3] b=[2, 5, 5] then c=[1, 2, 2, 3, 5, 5]
+example: `a=[1, 2, 3]` `b=[2, 5, 5]` then `c=[1, 2, 2, 3, 5, 5]`
 
 ## merge arrays
 
