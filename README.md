@@ -22,9 +22,9 @@ validate if a string is a permutation of another
 
 compact and optionally decompact a string
 
-string = "aaaaabbbadddcc"
+`string = "aaaaabbbadddcc"`
 
-compactador(string) = "a5b3a1d3c2"
+`compactador(string) = "a5b3a1d3c2"`
 
 ## maximum difference
 
