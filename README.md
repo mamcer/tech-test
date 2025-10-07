@@ -32,9 +32,10 @@ the difference between the elements of a matrix is defined by a[j] - a[i] where 
 complete la funcion maximumDifference which has and integer array as an input and returns the maximum difference
 if the maximum difference cannot be calculated (for example, the elements are in descedent order) the function should return -1
 
-example: [15, 3, 6, 10]
+example: `[15, 3, 6, 10]`
 
 differences: 
+
 6 - 3 = 3
 10 - 3 = 7
 10 - 6 = 4
